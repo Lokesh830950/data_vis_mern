@@ -1,0 +1,136 @@
+.layout-container {
+    text-align: center;
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    flex-wrap: wrap; 
+  }
+  
+  .left-half {
+    /* flex: 1; */
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr); 
+    gap: 18px; */
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px;
+  }
+  
+  .box {
+    width: 223px;
+    text-align: center;
+    padding: 1px;
+    border: 7px solid rgb(178, 177, 177);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(175, 75, 75);
+    height: 6.5cm;
+    margin: 10px;
+  }
+  
+  .right-half {
+    flex: 1;
+    padding: 20px; /* Add padding to the right side */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40vw;
+    margin: -15px 20px;
+    
+  }
+  
+  .textarea {
+    width: 100%;
+    height: 75%;
+    border-radius: 20px;
+    resize: none;
+    padding: 10px;
+    background-color: rgba(133, 135, 168, 0.998);
+    color: aliceblue;
+    text-align: left;
+    font-weight: 700;
+  }
+  .name{
+    display: flex;
+  }
+  
+  
+  .name .about {
+    padding-left: 20px;
+    font-size: 20px;
+    margin-top: 1px;
+  }
+  
+
+  .para {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    padding-bottom: 30px;
+  }
+
+
+  .header {
+    background-color: #c0a1d5;
+    padding: 10px;
+    text-align: center;
+  }
+  
+
+  /* ... (your existing CSS code) */
+  
+  .chart-container {
+    margin-top: 10px;
+  }
+
+
+
+  /* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .Slides {
+  flex-direction: column;
+  align-items: center;
+  display: grid; /* Added display grid */
+  grid-template-columns: repeat(3, 1fr); /* 3 columns for desktop */
+  grid-template-rows: repeat(2, 1fr); /* 2 rows for desktop */
+  gap: 10px;
+  justify-items: center;
+
+
+
+}
+
+  .textarea{
+    height: 580px;
+  }
+  .box{
+  box-sizing: border-box;
+  margin: 15px; /* Add margin for gap between slides */
+  background-color: #b85b66;
+  border: 6px solid #d9d4d4;
+  border-radius: 5px;
+  flex-direction: column;
+
+  
+  }
+  
+
+  .box {
+    width: 223pxpx;
+
+    height: 6.5cm;
+  }
+  .main{
+    flex-direction: column;
+  }
+}
+
+.database-icon h6{
+  padding-left: 20px;
+}

@@ -1,0 +1,25 @@
+.box {
+    width: 388px;
+    height: 456px;
+    background-color: #7D8B9F;
+  
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin:20px;
+    box-sizing: border-box;
+  
+    border-radius: 30px;
+    
+  
+  }
+
+
+  .box.h2{
+    text-align: justify;
+    color: #b85b66;
+  }
+  
+  .box.Content.database-icon{
+    
+    margin-right: 0px;
+  }

@@ -1,0 +1,15 @@
+.Navbar {
+
+    color: white;
+    padding: 1rem;
+    display: flex; /* Make the navbar a flex container */
+    justify-content: space-between; /* Spread content evenly */
+    align-items: center; /* Center vertically */
+    position: relative; /* Position for the colored sections */
+    height: 30px; /* Set navbar height */
+    background: linear-gradient(to right, #6789BB 60%,#4B6488 35%, #4B6488 85%,#2D3B51 55%);
+  
+      top: 0;
+      width: auto;
+  
+  }

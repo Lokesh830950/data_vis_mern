@@ -1,0 +1,92 @@
+/* Default styles for all screen sizes */
+.Slide {
+  flex-basis: 25%;
+  height: 212px;
+  box-sizing: border-box;
+  margin: 15px; /* Add margin for gap between slides */
+  background-color: #b85b66;
+  border: 6px solid #d9d4d4;
+  border-radius: 5px;
+  
+}
+
+.Slides {
+  flex: 3;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: start; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  margin-top: 9px;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  height: 543.5px;
+}
+
+.box {
+  width: 388px;
+  height: 456px;
+  background-color: #7D8B9F;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 20px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  grid-column: 2
+}
+
+.database-icon {
+  display: flex;
+  margin-right: 400px;
+  color: white;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: aliceblue;
+  margin: 0; /* Remove default margin to prevent extra spacing */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .Slides {
+    flex-direction: column;
+    align-items: center;
+    display: grid; /* Added display grid */
+  grid-template-columns: repeat(3, 1fr); /* 3 columns for desktop */
+  grid-template-rows: repeat(2, 1fr); /* 2 rows for desktop */
+  gap: 10px;
+
+
+
+  }
+  .bar{
+    justify-content: center;
+    display: flex;
+    padding-right: 100px;
+  }
+
+
+  .slide{
+  box-sizing: border-box;
+  margin: 15px; /* Add margin for gap between slides */
+  background-color: #b85b66;
+  border: 6px solid #d9d4d4;
+  border-radius: 5px;
+  flex-direction: column;
+  height: 212px;
+  
+  }
+  
+
+  .box {
+    width: 282px;
+
+    height: 456px;
+  }
+  .main{
+    flex-direction: column;
+  }
+}

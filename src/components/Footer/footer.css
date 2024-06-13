@@ -1,0 +1,64 @@
+/* Footer.css */
+
+/* Style for the whole footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 12px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+/* Style for the upper footer */
+.upper-footer {
+  background-color: #4B6488;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; /* Align items vertically */
+}
+
+/* Style for links within the footer */
+.github-logo a {
+  color: #151616;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+/* Style for links on hover */
+.github-logo a:hover {
+  color: #007bff;
+}
+
+/* Style for the lower footer */
+.lower-footer {
+  background-color: #333;
+  text-align: center;
+  padding: 6px;
+}
+
+.loki{
+  width: 100% ;
+  position: relative; /* Set position to relative */
+  margin-top: auto; /* Push footer to the bottom */
+  margin-bottom: 0px;
+  
+}
+
+/* Style for the text within the lower footer */
+.footer-text {
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* Media query for tablet and mobile view */
+@media (max-width: 768px) {
+  .upper-footer {
+    flex-direction: column;
+  }
+  
+  .footer-text {
+    font-size: 12px;
+  }
+}
